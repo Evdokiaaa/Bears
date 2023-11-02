@@ -8,7 +8,7 @@
 
 body {
   font-family: "Adamina", serif;
-  color: #F4F4F4;
+  color: #f4f4f4;
 }
 
 .container {
@@ -18,7 +18,7 @@ body {
 }
 
 .header {
-  background: #0E4447;
+  background: #0e4447;
 }
 .header__container {
   display: flex;
@@ -27,7 +27,7 @@ body {
 }
 
 .main {
-  background: #F4F4F4;
+  background: #f4f4f4;
   color: #454545;
 }
 
@@ -57,7 +57,7 @@ body {
 .filters__filter {
   border-radius: 6px;
   padding: 8px 15px;
-  background: #E4E4E4;
+  background: #e4e4e4;
 }
 .filters__filter option {
   font-size: 14px;
@@ -65,7 +65,9 @@ body {
 .filters__label {
   font-size: 14px;
   font-family: Actor, sans-serif;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .bears {
@@ -79,7 +81,7 @@ body {
 
 .bear {
   border-radius: 0px 0px 6px 6px;
-  background: #FFF;
+  background: #fff;
 }
 .bear img {
   width: 100%;
@@ -111,27 +113,29 @@ body {
 }
 .bear__accept {
   border-radius: 16px;
-  background: #58FFB5;
+  background: #58ffb5;
   border: none;
   outline: none;
   color: #208085;
   font-family: Actor, sans-serif;
   font-size: 14px;
   padding: 8px 60px;
+  cursor: pointer;
+}
+.bear__accept:hover {
+  background: #feed7e;
 }
 .bear__reject {
   border-radius: 16px;
   background: #208085;
   border: none;
   outline: none;
-  color: #FFF;
+  color: #fff;
   padding: 8px 60px;
 }
 
 .footer {
-  background: #0E4447;
+  background: #0e4447;
   padding: 10px 0;
   text-align: center;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
