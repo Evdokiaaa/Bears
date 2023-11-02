@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Adamina', serif;
+  color:#F4F4F4;
+}
+.container{
+  max-width: 1200px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+.header{
+  background: #0E4447;
+
+  &__container{
+    display: flex;
+    padding: 12px 0;
+    gap:12px;
+  }
+}
+.main{
+  background: #F4F4F4;
+  color: #454545;
+}
+.filters{
+  padding: 40px 0;
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    h4{
+      font-size: 24px;
+      font-family: Actor,sans-serif;
+      font-weight: 400;
+      letter-spacing: 1.2px;
+    }
+  }
+  &__right{
+    display:flex;
+    align-items: center;
+    gap:30px;
+    &-check{
+      display: flex;
+      align-items: center;
+      gap:10px;
+    }
+  }
+  &__filter{
+    border-radius: 6px;
+    padding: 8px 15px;
+    background: #E4E4E4;
+    option{
+      font-size: 14px;
+    }
+  }
+  &__label{
+    font-size: 14px;
+    font-family: Actor,sans-serif;
+    user-select: none;
+  }
+}
+.bears{
+  padding: 0 0 100px 0;
+  &__container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+  }
+
+}
+.bear{
+  border-radius: 0px 0px 6px 6px;
+  background: #FFF;
+  img{
+    width: 100%;
+    border-radius: 6px 6px 0px 0px;
+  }
+  &__title{
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+
+  }
+  &__desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #767676;
+    font-family: Actor,sans-serif;
+
+  }
+  &__btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin-top: 15px;
+    button {
+      width: 90%;
+    }
+  }
+  &__accept{
+    border-radius: 16px;
+    background: #58FFB5;
+    border:none;
+    outline: none;
+    color: #208085;
+    font-family: Actor,sans-serif;
+    font-size: 14px;
+    padding: 8px 60px;
+  }
+  &__reject{
+    border-radius: 16px;
+    background: #208085;
+    border:none;
+    outline: none;
+    color: #FFF;
+    padding: 8px 60px;
+
+  }
+}
+.footer{
+  background: #0E4447;
+  padding: 10px 0;
+  text-align: center;
+}

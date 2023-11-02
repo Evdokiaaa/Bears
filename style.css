@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Adamina&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Actor&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Adamina", serif;
+  color: #F4F4F4;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #0E4447;
+}
+.header__container {
+  display: flex;
+  padding: 12px 0;
+  gap: 12px;
+}
+
+.main {
+  background: #F4F4F4;
+  color: #454545;
+}
+
+.filters {
+  padding: 40px 0;
+}
+.filters__container {
+  display: flex;
+  justify-content: space-between;
+}
+.filters__container h4 {
+  font-size: 24px;
+  font-family: Actor, sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+.filters__right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.filters__right-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.filters__filter {
+  border-radius: 6px;
+  padding: 8px 15px;
+  background: #E4E4E4;
+}
+.filters__filter option {
+  font-size: 14px;
+}
+.filters__label {
+  font-size: 14px;
+  font-family: Actor, sans-serif;
+  user-select: none;
+}
+
+.bears {
+  padding: 0 0 100px 0;
+}
+.bears__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.bear {
+  border-radius: 0px 0px 6px 6px;
+  background: #FFF;
+}
+.bear img {
+  width: 100%;
+  border-radius: 6px 6px 0px 0px;
+}
+.bear__title {
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+.bear__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #767676;
+  font-family: Actor, sans-serif;
+}
+.bear__btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.bear__btns button {
+  width: 90%;
+}
+.bear__accept {
+  border-radius: 16px;
+  background: #58FFB5;
+  border: none;
+  outline: none;
+  color: #208085;
+  font-family: Actor, sans-serif;
+  font-size: 14px;
+  padding: 8px 60px;
+}
+.bear__reject {
+  border-radius: 16px;
+  background: #208085;
+  border: none;
+  outline: none;
+  color: #FFF;
+  padding: 8px 60px;
+}
+
+.footer {
+  background: #0E4447;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
