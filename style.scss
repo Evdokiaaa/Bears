@@ -10,6 +10,10 @@ body {
   font-family: "Adamina", serif;
   color: #f4f4f4;
 }
+img{
+  max-width: 100%;
+
+}
 .container {
   max-width: 1200px;
   padding: 0 5px;
@@ -77,6 +81,7 @@ body {
   background: #fff;
   img {
     width: 100%;
+    height: 167px; //poka tak
     border-radius: 6px 6px 0px 0px;
   }
   &__title {
@@ -101,6 +106,13 @@ body {
     margin-top: 15px;
     button {
       width: 90%;
+      outline: none;
+      cursor: pointer;
+      &:active{
+        outline: none;
+        box-shadow: 0 0 3px 3px #cad0c7;
+
+      }
     }
   }
   &__accept {
@@ -124,6 +136,10 @@ body {
     outline: none;
     color: #fff;
     padding: 8px 60px;
+
+    &:hover{
+      background: #0E4447;
+    }
   }
 }
 .footer {

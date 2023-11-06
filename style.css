@@ -11,6 +11,10 @@ body {
   color: #f4f4f4;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 5px;
@@ -65,9 +69,7 @@ body {
 .filters__label {
   font-size: 14px;
   font-family: Actor, sans-serif;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .bears {
@@ -85,6 +87,7 @@ body {
 }
 .bear img {
   width: 100%;
+  height: 167px;
   border-radius: 6px 6px 0px 0px;
 }
 .bear__title {
@@ -110,6 +113,12 @@ body {
 }
 .bear__btns button {
   width: 90%;
+  outline: none;
+  cursor: pointer;
+}
+.bear__btns button:active {
+  outline: none;
+  box-shadow: 0 0 3px 3px #cad0c7;
 }
 .bear__accept {
   border-radius: 16px;
@@ -133,9 +142,14 @@ body {
   color: #fff;
   padding: 8px 60px;
 }
+.bear__reject:hover {
+  background: #0E4447;
+}
 
 .footer {
   background: #0e4447;
   padding: 10px 0;
   text-align: center;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
